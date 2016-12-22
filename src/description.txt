@@ -1,0 +1,1 @@
+No Flare makes it impossible for chests to contain flare guns.
