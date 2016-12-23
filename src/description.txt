@@ -1,1 +1,1 @@
-No Flare makes it impossible for chests to contain flare guns.
+No Flare drastically improves the sanity of Terraria players by removing Flare Guns from chests and replacing them with a randomly selected rare Gold Chest item.
