@@ -36,7 +36,7 @@ namespace NoFlare
       var LastIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Final Cleanup"));
       if (LastIndex != -1)
       {
-        tasks.Insert(LastIndex - 1, new PassLegacy("Remove Flare Guns", delegate (GenerationProgress progress)
+        tasks.Insert(LastIndex, new PassLegacy("Remove Flare Guns", delegate (GenerationProgress progress)
         {
           progress.Message = "Removing flare guns from chests";
           progress.CurrentPassWeight = 1.0f;
