@@ -4,3 +4,4 @@ displayName = No Flare
 homepage = https://github.com/Murfalo/NoFlare
 hideCode = true
 buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
+languageVersion = 6
