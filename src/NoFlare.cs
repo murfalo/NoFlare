@@ -29,13 +29,7 @@ namespace NoFlare
       975, // Shoe Spikes
       997  // Extractinator
     };
-    private static readonly int[] GoldChestItems =
-    {
-      40, // Wooden Arrow
-      42, // Shuriken
-    };
     private static int GoldChestRareItem => GoldChestRareItems[R.Next(GoldChestRareItems.Length)];
-    private static int GoldChestItem => GoldChestItems[R.Next(GoldChestRareItems.Length)];
 
     public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
     {
@@ -45,14 +39,15 @@ namespace NoFlare
         tasks.Insert(LastIndex - 1, new PassLegacy("Remove Flare Guns", delegate (GenerationProgress progress)
         {
           progress.Message = "Removing flare guns from chests";
+          progress.CurrentPassWeight = 1.0f;
 
           foreach (var c in Main.chest)
           {
             if (c?.item[0]?.netID != FlareGun) continue;
             c.item[0].SetDefaults(GoldChestRareItem);
             c.item[0].Prefix(-1);
-            c.item[1].SetDefaults(GoldChestItem);
-            c.item[1].Prefix(-1);
+            for (var i = 2; i < c.item.Length; i++)
+              c.item[i - 1] = c.item[i];
           }
         }));
       }
