@@ -1,5 +1,5 @@
 author = Murfalo
-version = 1.0.1
+version = 1.0.2
 displayName = No Flare
 homepage = https://forums.terraria.org/index.php?threads/no-flare.53022/
 hideCode = true
