@@ -1,7 +1,7 @@
 author = Murfalo
-version = 1.0.2
+version = 1.0.3
 displayName = No Flare
-homepage = https://forums.terraria.org/index.php?threads/no-flare.53022/
+homepage = https://forums.terraria.org/index.php?threads/no-flare.53098/
 hideCode = true
 buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
 languageVersion = 6

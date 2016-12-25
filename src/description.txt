@@ -1,1 +1,1 @@
-No Flare drastically improves the sanity of Terraria players by removing Flare Guns from chests and replacing them with a randomly selected rare Gold Chest item.
+No Flare aims to drastically improve the sanity of Terraria players by removing Flare Guns from chests and replacing them with a randomly selected rare Gold Chest item. Flare Guns and flares are instead purchasable from the Merchant. Enjoy!
