@@ -10,8 +10,6 @@ namespace NoFlare
     {
       if (type != NPCID.Merchant) return;
       shop.item[nextSlot++].SetDefaults(930);
-      shop.item[nextSlot++].SetDefaults(931);
-      shop.item[nextSlot++].SetDefaults(1614);
     }
   }
 }
